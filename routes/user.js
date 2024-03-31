@@ -6,7 +6,7 @@ const passport = require("passport");
 const { saveRedirectUrl } = require("../middleware.js");
 
 const userController = require("../controllers/users.js");
-
+const listingController = require("../controllers/listings.js")
 router.route("/signup")
 .get(userController.renderSignupForm)
 .post(wrapAsync(userController.signup));
@@ -19,7 +19,7 @@ router.route("/login")
 }),
 userController.login
 );
-
+router.get("/", listingController.showListing);
 router.get("/logout", userController.logout);
 
 module.exports = router;
