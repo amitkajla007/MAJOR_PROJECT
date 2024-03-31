@@ -2,7 +2,7 @@
 <script>
     const mapToken = "<%= process.env.MAP_TOKEN %>"
     const listing = <%- JSON.stringify(listing) %>;
-    </script>
+</script>
 
 <div class="row mt-3">
     <div class="col-8 offset-3">
@@ -95,5 +95,28 @@
         <div id="map"></div>
     </div>
 </div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
+
+<style>
+@media only screen and (max-width: 750px) {
+    /* Adjustments for extra small devices */
+    .col-5 {
+        width: 100% !important;
+    }
+    .offset-3 {
+        margin-left: 0;
+    }
+    .btns {
+        text-align: center;
+    }
+    .show-card {
+        width: 100%;
+    }
+    .edit-btn,
+    .btn-dark {
+        width: 100%;
+    }}
+
+</style>
 
 <script src="/js/map.js"></script>

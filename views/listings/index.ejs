@@ -36,7 +36,10 @@
     display: flex;
     align-items: center;
   }
+
+ 
 </style>
+
 
 <body>    
     <div id="filters">
@@ -119,3 +122,27 @@
     }
   });
 </script>
+
+<style>
+  @media (max-width: 991px) {
+  #filters {
+    justify-content: center;
+  }
+  .filter {
+    margin: 1rem;
+  }
+  .tax-toggle {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .filter {
+    font-size: 0.7rem;
+  }
+  .tax-toggle {
+    margin-top: 1rem;
+  }
+}
+</style>
+
