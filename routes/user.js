@@ -19,7 +19,7 @@ router.route("/login")
 }),
 userController.login
 );
-router.get("/", listingController.showListing);
+router.get("/", listingController.index);
 router.get("/logout", userController.logout);
 
 module.exports = router;
